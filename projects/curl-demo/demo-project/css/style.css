@@ -1,0 +1,197 @@
+* {box-sizing:border-box;}
+html, body {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family:'Tahoma';
+	background:peachpuff;
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1 {
+	text-align:center;
+	font-size:40px;
+  text-shadow: -2px -2px white, -1px -1px white, 1px 1px burlywood, 2px 2px burlywood;
+}
+h1 a {
+	color:peachpuff;
+	text-decoration:none;
+}
+h2 {
+	font-size:22px;
+	margin:30px 0 10px 0;
+}
+.fade h2 {
+	margin:0 0 10px 0;
+}
+h2, p, li {color:#a8875d;}
+p, li {
+	margin-bottom:10px;
+}
+li:last-child {
+	margin-bottom:0;
+}
+
+/* ========== CONTENT WRAPPERS ========== */
+.wrapper {
+	max-width:960px;
+	margin:0 auto 20px auto;
+}
+
+.fade {
+	padding:20px;
+	background:rgba(255,255,255,.3);
+}
+.cart .fade .fade + .fade {
+	margin-top:20px;
+}
+ul li {
+	list-style-position:inside;
+}
+
+.space-between {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+/* ========== MENU ========== */
+nav {
+	background:rgba(255,255,255,.3);
+	padding:0 24px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+.menu {
+	list-style-type:none;
+	display:flex;
+}
+.menu li {margin:0;padding:0;}
+a.warning {
+	color:red;
+	text-decoration:none;
+	font-weight:bold;
+}
+.a.warning:hover {color:firebrick;}
+
+.menu a {
+	display:block;
+	padding:0 10px;
+}
+.menu a:hover {
+	text-decoration:none;
+}
+
+.admin-menu {
+	background:rgba(255,255,255,.3);
+	max-width:960px;
+	padding:20px;
+	margin:20px auto;
+}
+
+/* ========== TABLES ========== */
+table {
+	width:100%;
+}
+table, th, td {
+	border:1px solid #fff;
+	border-collapse:collapse;
+}
+th {
+	background:#fff;
+}
+th, td {
+	padding:5px;
+}
+
+/* ========== FORMS ========== */
+form {
+	margin:24px 0;
+}
+.space-between form {margin:0;}
+form + a {display:block;text-align:center;}
+input:not([type="submit"]), label, textarea, select {
+	margin:6px auto;
+	display:block;
+	width:90%;
+}
+input, textarea, select {
+	border:1px solid burlywood;
+	padding:6px;
+}
+input:focus, textarea:focus {
+	outline:1px solid burlywood;
+}
+label {
+	width:calc(90% + 12px);
+	margin-top:12px;
+}
+input[type="submit"]{
+	margin-top:12px;
+	width:300px;
+	cursor:pointer;
+	background:burlywood;
+}
+input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"].deletion:focus, input[type="submit"].deletion:hover {
+	background:peachpuff;
+}
+.cart form {
+	margin:20px 0 0 0;
+}
+textarea {
+	min-height:100px;
+}
+
+.inline-form {
+	display:flex;
+	align-items:center;
+}
+.inline-form > * {
+	flex:1;
+}
+.inline-form input{
+	padding:6px;
+	margin:0;
+}
+.inline-form input[type="submit"]{
+	margin-top:0;
+	max-width:300px;
+}
+.inline-form label {display:none;}
+
+/* ========== NOTICES ========== */
+.error {
+	width:90%;
+	margin:0 auto;
+	color:tomato;
+}
+input[type="submit"].deletion {
+	color:#fff;
+	background:tomato;
+	border:1px solid tomato;
+}
+input[type="submit"].deletion:focus, input[type="submit"].deletion:hover {
+	color:tomato;
+}
+
+.modal {
+	position:absolute;
+	width:300px;
+	min-height:150px;
+	background:tomato;
+	display:flex;
+	align-items:center;justify-content:center;
+	left:50%;
+	top:50%;
+	transform: translateX(-50%) translateY(-50%);
+	animation: fade 2s forwards;
+}
+.modal p {color:#fff;}
+
+@keyframes fade {
+	70% {opacity:1;}
+	100% {opacity:0;}
+}
+
