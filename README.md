@@ -28,4 +28,6 @@ A subclass of DateTime - meant for easy formatting of dates according to Danish 
 2. *Coming soon*
 
 ## Example Projects
-*Coming soon*
+1. Basic PHP Rest API
+2. Example usage of the PHP Rest API, including usage of the cURL class
+2. *More coming soon*
