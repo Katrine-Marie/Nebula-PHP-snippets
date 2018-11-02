@@ -1,5 +1,7 @@
 # Nebula-PHP-snippets
-Useful PHP snippets
+PHP snippets for everyday use cases. 
+
+If you're looking for an entire PHP boilerplate project, go to: https://github.com/Katrine-Marie/PHP-boilerplate2018 .
 
 ## Classes
 ### Pagination
