@@ -6,6 +6,10 @@
 
     }
     
+    private function generatePasswordString(){
+    }
     
+    public function returnNewPassword(){
+    }
 
   }
