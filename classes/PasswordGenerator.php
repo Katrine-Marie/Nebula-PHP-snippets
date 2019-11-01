@@ -27,6 +27,11 @@
       // Bland karaktererne
       $allChars = str_shuffle($allChars);
       
+      // Trim tekststreng til random antal karakterer (dog mellem 8 og 35)
+      $chars = substr($allChars, 0, rand(8,35));
+
+      return $chars;
+      
     }
     
     public function returnNewPassword(){
