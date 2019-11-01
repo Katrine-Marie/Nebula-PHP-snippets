@@ -24,6 +24,9 @@
       // Tilføj udvalgte specialtegn til tekststreng
       $allChars .= ".,!?#()[]=%&~^:;-_";
       
+      // Bland karaktererne
+      $allChars = str_shuffle($allChars);
+      
     }
     
     public function returnNewPassword(){
