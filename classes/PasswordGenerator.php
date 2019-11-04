@@ -39,6 +39,15 @@
       // Generer et password
       $password = $this->generatePasswordString();
       
+      // Test om passwordet indeholder alle påkrævede karakterer
+      if(preg_match('/[a-z][A-Z][0-9]/', $password) && preg_match('/[!]|[#-&]|[(-,]|[{-~]|[:-@]/', $password) && strlen($password) >= 8){
+
+        return $password;
+
+      }else {
+        // Hvis password mangler en type karakterer, generer nyt password
+        return $this->returnNewPassword();
+      }
     }
 
   }
