@@ -35,6 +35,10 @@
     }
     
     public function returnNewPassword(){
+      
+      // Generer et password
+      $password = $this->generatePasswordString();
+      
     }
 
   }
